@@ -1,0 +1,14 @@
+spring: 
+  thymeleaf:
+    cache: false
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java 
+      exclude: WEB_INF/**   
+  application:
+    name: msa-weather-report-eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

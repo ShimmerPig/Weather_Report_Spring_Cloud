@@ -1,0 +1,29 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.demo'
+version = '0.0.1-SNAPSHOT'
+
+description = """"""
+
+sourceCompatibility = 1.5
+targetCompatibility = 1.5
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version:'1.4.0.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'1.4.0.RELEASE'
+    compile group: 'org.slf4j', name: 'slf4j-jdk14', version:'1.7.7'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka', version:'1.2.1.RELEASE'
+    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version:'1.4.0.RELEASE') {
+exclude(module: 'commons-logging')
+    }
+}
