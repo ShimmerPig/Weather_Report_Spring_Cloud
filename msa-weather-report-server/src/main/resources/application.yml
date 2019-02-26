@@ -1,0 +1,8 @@
+spring: 
+  thymeleaf:
+    cache: false
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java 
+      exclude: WEB_INF/**   
