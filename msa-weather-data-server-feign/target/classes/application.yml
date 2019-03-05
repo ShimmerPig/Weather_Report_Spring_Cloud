@@ -1,0 +1,17 @@
+server:
+  port: 8087
+spring: 
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java 
+      exclude: WEB_INF/**   
+  application:
+    name: msa-weather-data-eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+ribbon: 
+  eureka:
+    enabled: true

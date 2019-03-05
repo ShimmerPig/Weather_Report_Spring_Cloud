@@ -1,0 +1,7 @@
+com\demo\vo\CityList.class
+com\demo\Sifoudemo02Application.class
+com\demo\controller\CityController.class
+com\demo\util\XmlBuilder.class
+com\demo\service\CityDataService.class
+com\demo\service\CityDataServiceImpl.class
+com\demo\vo\City.class

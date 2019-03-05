@@ -1,0 +1,20 @@
+server:
+  port: 8089
+spring: 
+  application:
+    name: msa-weather-collection-eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+feign: 
+  client: 
+    config: 
+      feignName: 
+        connectTimeout: 5000
+        readTimeout: 5000
+  hystrix: 
+    enabled: false
+ribbon: 
+  eureka:
+    enabled: true

@@ -1,0 +1,8 @@
+com\demo\service\WeatherDataService.class
+com\demo\vo\Weather.class
+com\demo\Sifoudemo02Application.class
+com\demo\vo\Forecast.class
+com\demo\vo\WeatherResponse.class
+com\demo\service\WeatherDataServiceImpl.class
+com\demo\vo\Yeaterday.class
+com\demo\controller\WeatherController.class
